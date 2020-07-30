@@ -12,9 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let RedView = UIView()
+        RedView.backgroundColor = .red
+        
+        view.addSubview(RedView)
+        
+        RedView.translatesAutoresizingMaskIntoConstraints = false
+        
+        RedView.topAnchor.constraint(equalTo:view.topAnchor).isActive = true
+        RedView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        RedView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        RedView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
     }
-
-
 }
-
