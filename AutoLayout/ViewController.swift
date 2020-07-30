@@ -20,10 +20,10 @@ class ViewController: UIViewController {
         
         RedView.translatesAutoresizingMaskIntoConstraints = false
         
-        RedView.topAnchor.constraint(equalTo:view.topAnchor).isActive = true
-        RedView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        RedView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        RedView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        RedView.topAnchor.constraint(equalTo:view.topAnchor,constant: 50).isActive = true
+        RedView.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -50).isActive = true
+        RedView.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 50).isActive = true
+        RedView.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -50).isActive = true
         
     }
 }
